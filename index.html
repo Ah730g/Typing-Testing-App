@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="app">
+        <div class="game-name">Typing Speed Test Game</div>
+        <div class="container">
+            <div class="choosing-level">
+                <span>Choosing The Difficulty Level</span>
+                <div>
+                    <input type="radio" data-level="Easy" id="easy" name="levels" class="enabled">
+                    <label for="easy">Easy</label>
+
+                    <input type="radio" data-level="Medium" id="medium" name="levels">
+                    <label for="medium">Medium</label>
+
+                    <input type="radio" data-level="Hard" id="hard" name="levels">
+                    <label for="hard">Hard</label>
+                </div>
+            </div>
+            <div class="message">
+                You Are Playing On <span class="level"></span> Level & You Have <span class="tries"></span> Seconds To Type The Word
+            </div>
+            <button class="start">Start Playing</button>
+            <div class="the-word"></div>
+            <input type="text" class="typing-word">
+            <div class="testing-words">
+                Words Will Show Here
+            </div>
+            <div class="contorl">
+                <div class="time">
+                    Time Left: <span></span> Seconds
+                </div>
+                <div class="score">
+                    Score : <span class="correct-words">0</span> from <span class="total"></span>
+                </div>
+            </div>
+            <div class="finish"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+:root {
+    --main-color: #2196f3;
+    --sec-color: #009688;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin : 0;
+}
+.app {
+    background-color: #eee;
+    min-height: 100vh;
+}
+.game-name {
+    padding: 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px
+}
+.app .container {
+    margin : auto;
+    width : 800px;
+}
+.choosing-level {
+    padding : 20px;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom : 15px;
+}
+.choosing-level span {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+.choosing-level.enabled
+ {
+    pointer-events: none;
+}
+.choosing-level div label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.message {
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.message span {
+    color : var(--sec-color);
+}
+.message span::before {
+    content: "[ ";
+}
+.message span::after {
+    content: " ]";
+}
+.start {
+    background-color: var(--sec-color);
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.the-word {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 15px;
+    user-select: none;
+}
+.typing-word {
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid var(--main-color);
+    margin-bottom: 15px;
+    text-align: center;
+    caret-color: var(--main-color);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.typing-word:focus {
+    outline : none;
+}
+.testing-words {
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 15px;
+}
+.testing-words div {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.contorl {
+    background-color: #fff;
+    padding : 15px;
+    margin-bottom:15px;
+    display: flex;
+    justify-content: space-between;
+}
+.contorl span {
+    color : var(--sec-color);
+    font-weight: bold;
+}
+.finish {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.finish .bad {
+    color : red;
+}
+.finish .good {
+    color : green;
+}
